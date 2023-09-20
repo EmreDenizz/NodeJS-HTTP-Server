@@ -33,6 +33,24 @@ app.get('/products', function(req, res) {
     log_request_counters();
 })
 
+// POST
+app.post('/products', function(req, res) {
+    post_counter++;
+
+    // Log messages
+    console.log('> products POST: received request');
+    console.log('< products POST: sending response');
+
+    // Parse product json from the request and push to stored products
+    var product = req.body;
+    products.push(product);
+
+    res.send('SUCCESSFUL');
+    
+    // Log request count messages
+    log_request_counters();
+});
+
 // Server is listenning
 app.listen(port, () => {
     // Log messages
