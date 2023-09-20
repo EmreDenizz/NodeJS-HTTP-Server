@@ -20,6 +20,8 @@ Features:
 3. Clear all input fields with **Clear button**.
 
 ### SCREENSHOTS:
-<kbd><img src="SS_1.png" width="600"/></kbd>
-<kbd><img src="SS_2.png" width="600"/></kbd>
-<kbd><img src="SS_3.png" width="600"/></kbd>
+<kbd><img src="SS_1.png" width="500"/></kbd>
+
+<kbd><img src="SS_2.png" width="500"/></kbd>
+
+<kbd><img src="SS_3.png" width="500"/></kbd>
