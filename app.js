@@ -51,6 +51,23 @@ app.post('/products', function(req, res) {
     log_request_counters();
 });
 
+// DELETE
+app.delete('/products', function(req, res) {
+    delete_counter++;
+
+    // Log messages
+    console.log('> products DELETE: received request');
+    console.log('< products DELETE: sending response');
+
+    // Delete all products
+    products = [];
+
+    res.send('SUCCESSFUL');
+
+    // Log request count messages
+    log_request_counters();
+});
+
 // Server is listenning
 app.listen(port, () => {
     // Log messages
