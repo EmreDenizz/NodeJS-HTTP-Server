@@ -1,5 +1,5 @@
 # NodeJS-HTTP-Server
- Node.js http server to store, retrieve and delete information about products using HTTP GET, POST and DELETE requests and JSON data format
+ Node.js HTTP server implemented with express.js that stores, retrieves and deletes products using GET, POST and DELETE methods and JSON data format
 
  ### HOW TO RUN:
 1. Install required packages and run HTTP server
@@ -20,8 +20,8 @@ Features:
 3. Clear all input fields with **Clear button**.
 
 ### SCREENSHOTS:
-<kbd><img src="SS_1.png" width="500"/></kbd>
+<kbd><img src="screenshots/SS_1.png" width="500"/></kbd>
 
-<kbd><img src="SS_2.png" width="500"/></kbd>
+<kbd><img src="screenshots/SS_2.png" width="500"/></kbd>
 
-<kbd><img src="SS_3.png" width="500"/></kbd>
+<kbd><img src="screenshots/SS_3.png" width="500"/></kbd>

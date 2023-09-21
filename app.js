@@ -20,13 +20,7 @@ app.get('/products', function(req, res) {
     console.log('> products GET: received request');
     console.log('< products GET: sending response');
 
-    // var result = '';
-    // for(var i=0; i<products.length; i++){
-    //     result += JSON.stringify(products[i]) + '\n';
-    // }
-    // res.send(result);
-
-    // Return products as response
+    // Return response
     res.send(products);
 
     // Log request count messages
@@ -45,7 +39,8 @@ app.post('/products', function(req, res) {
     var product = req.body;
     products.push(product);
 
-    res.send('SUCCESSFUL');
+    // Return response
+    res.status(201).send('SUCCESSFUL');
     
     // Log request count messages
     log_request_counters();
@@ -62,7 +57,8 @@ app.delete('/products', function(req, res) {
     // Delete all products
     products = [];
 
-    res.send('SUCCESSFUL');
+    // Return response
+    res.status(204).send('SUCCESSFUL');
 
     // Log request count messages
     log_request_counters();
