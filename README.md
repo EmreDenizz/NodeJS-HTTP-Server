@@ -1,5 +1,9 @@
 # NodeJS-HTTP-Server
- Node.js HTTP server implemented with express.js that stores, retrieves and deletes products using GET, POST and DELETE methods and JSON data format
+ Node.js HTTP server implemented with express.js that stores, retrieves and deletes products using
+ - GET
+ - POST
+ - DELETE methods
+and JSON data format
 
  ### HOW TO RUN:
 1. Install required packages and run HTTP server
