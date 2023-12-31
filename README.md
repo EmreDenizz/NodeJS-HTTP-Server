@@ -3,6 +3,7 @@
  - GET
  - POST
  - DELETE methods
+   
 and JSON data format
 
  ### HOW TO RUN:
