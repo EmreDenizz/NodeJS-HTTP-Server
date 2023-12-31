@@ -18,8 +18,14 @@ node app.js
 - **DELETE** all products
 
 ### SCREENSHOTS:
-<kbd><img src="screenshots/SS_1.png" width="500"/></kbd>
-
+**GET:**<br/>
 <kbd><img src="screenshots/SS_2.png" width="500"/></kbd>
 
+**POST:**<br/>
+<kbd><img src="screenshots/SS_1.png" width="500"/></kbd>
+
+**PUT:**<br/>
+<kbd><img src="screenshots/SS_4.png" width="500"/></kbd>
+
+**DELETE:**<br/>
 <kbd><img src="screenshots/SS_3.png" width="500"/></kbd>
