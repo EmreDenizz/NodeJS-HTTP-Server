@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "022e2aaa-c343-4eee-87d7-64d402923231",
-		"name": "HTTP-Server",
+		"name": "Postman Collection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "17158940"
 	},
@@ -46,7 +46,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n   \"productId\": 2,\n   \"name\": \"Pen\",\n   \"price\": 2.1,\n   \"quantity\": 15\n}"
+					"raw": "{\n   \"productId\": 1,\n   \"name\": \"Pencil\",\n   \"price\": 2.1,\n   \"quantity\": 25\n}"
 				},
 				"url": {
 					"raw": "127.0.0.1:3000/products",
@@ -65,7 +65,7 @@
 			"response": []
 		},
 		{
-			"name": "deleteProduct",
+			"name": "deleteProducts",
 			"request": {
 				"method": "DELETE",
 				"header": [
@@ -90,6 +90,70 @@
 					"port": "3000",
 					"path": [
 						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProduct",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"productId\": 2,\n   \"name\": \"Pen\",\n   \"price\": 4,\n   \"quantity\": 30\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/products/2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"productId\": 2,\n   \"name\": \"Pen\",\n   \"price\": 2.1,\n   \"quantity\": 15\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/products/2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"2"
 					]
 				}
 			},
