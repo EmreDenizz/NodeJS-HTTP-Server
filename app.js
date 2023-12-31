@@ -71,6 +71,29 @@ app.put('/products/:id', function(req, res) {
     log_request_counters();
 });
 
+// DELETE ONE
+app.delete('/products/:id', function(req, res) {
+    delete_counter++;
+
+    // Log messages
+    console.log('> products DELETE: received request');
+    console.log('< products DELETE: sending response');
+
+    // Delete the product
+    var id = req.params.id;
+    for(var i=0; i<products.length; i++){
+        if(products[i].productId == id){
+            products.splice(i, 1)
+        }
+    }
+
+    // Return response
+    res.status(204).send();
+
+    // Log request count messages
+    log_request_counters();
+});
+
 // DELETE ALL
 app.delete('/products', function(req, res) {
     delete_counter++;
