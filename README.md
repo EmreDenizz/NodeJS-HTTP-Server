@@ -1,7 +1,8 @@
 # NodeJS-HTTP-Server
- Node.js HTTP server implemented with Express.js that stores, retrieves and deletes products using
+ Node.js HTTP server implemented with Express.js that stores, retrieves, updates and deletes products using
  - GET
  - POST
+ - PUT
  - DELETE methods
    
 and JSON data format
@@ -12,10 +13,12 @@ and JSON data format
 npm install
 node app.js
 ```
-2. Import https://github.com/EmreDenizz/NodeJS-HTTP-Server/blob/main/postman_collection.json to Postman
-- **POST** products data
-- **GET** products data
-- **DELETE** all products
+2. Import https://github.com/EmreDenizz/NodeJS-HTTP-Server/blob/main/postman_collection.json to your Postman
+- **GET:** get all products
+- **POST:** add new product
+- **PUT:** update a product
+- **DELETE/:id:** delete one product
+- **DELETE:** delete all products
 
 ### SCREENSHOTS:
 **GET:**<br/>
